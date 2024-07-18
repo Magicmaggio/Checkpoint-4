@@ -1,4 +1,4 @@
-💪 Challenge  
+# 💪 Challenge  
 
 ## 1. Assurer le support utilisateur en centre de service
 
@@ -134,16 +134,15 @@ WORKDIR /data
 # Image en mode interactif
 CMD ["bash", "-i"]
 ```
-5.4 Pour la copie d'écran ci-dessous, quelle devrait être ta démarche dans une telle situation ?
+### 5.4 Pour la copie d'écran ci-dessous, quelle devrait être ta démarche dans une telle situation ?
 
-image de nagios avec une alerte critique sur un swap à 0%
+### 5.5 Que veulent dire les termes PaaS, IaaS, et SaaS ?
 
-5.5 Que veulent dire les termes PaaS, IaaS, et SaaS ?
+### 5.6 Dans la mise en oeuvre d'une solution HA (High Availability), quels sont les élements indispensable ?
+  
+## 6. Maintenir et sécuriser les accès à Internet et les interconnexions des réseaux
 
-5.6 Dans la mise en oeuvre d'une solution HA (High Availability), quels sont les élements indispensable ?
-6. Maintenir et sécuriser les accès à Internet et les interconnexions des réseaux
-
-6.1 Quel est l'impact des ACL ci-dessous sur la machine 172.16.0.10 ? Peut-on fusionner ces ACL pour n'en former qu'une seule ? Si oui fais-le.  
+### 6.1 Quel est l'impact des ACL ci-dessous sur la machine 172.16.0.10 ? Peut-on fusionner ces ACL pour n'en former qu'une seule ? Si oui fais-le.  
 
 ```
 access-list 100 deny icmp host 172.16.0.10 172.17.0.0 0.255.255.255
@@ -153,22 +152,17 @@ access-list 101 deny tcp host 172.16.0.10 host 220.0.0.60 eq 443
 access-list 101 permit ip any any
 ```
 
-6.2 Pour les commandes ci-dessous les 2 chaînes de caractères en entrée sont de tailles différentes et pourtant la longueur du résultat des commandes est identique. Pourquoi ?
+### 6.2 Pour les commandes ci-dessous les 2 chaînes de caractères en entrée sont de tailles différentes et pourtant la longueur du résultat des commandes est identique. Pourquoi ?
 
 wilder@Ubuntu:~$ echo -n "test message" | sha512sum
-
 950b2a7effa78f51a63515ec45e03ecebe50ef2f1c41e69629b50778f11bc080002e4db8112b59d09389d10f3558f85bfdeb4f1cc55a34217af0f8547700ebf3  -
 
-
 wilder@Ubuntu:~$ echo -n "ce message n'a aucun rapport avec le précedent !" | sha512sum
-
 0096a6b7b1ff9714c8a0ecd308e1c952ec2f956f0f5ae28ec29b3e6b68f16a127ea4c379c4aafce2e4f97c029874628f4d3376440ae87c34f83b225c973f1d0a  -
 
-6.3 Sur l'infrastructure réseau représentée par le schéma ci-dessous, que faut-il faire pour que l'on puisse accéder de manière sécurisée au serveur web depuis internet ?
+### 6.3 Sur l'infrastructure réseau représentée par le schéma ci-dessous, que faut-il faire pour que l'on puisse accéder de manière sécurisée au serveur web depuis internet ?
 
-schéma réseau avec internet, pare-feu, et DMZ avec un serveur web dedans
-
-6.4 Quels types de VPN sont représentés dans les illustrations suivantes ?
+### 6.4 Quels types de VPN sont représentés dans les illustrations suivantes ?
 
 VPN A :
 schéma d'un VPN nomade
@@ -176,32 +170,32 @@ schéma d'un VPN nomade
 VPN B :
 schéma d'un VPN site-à-site
 
-6.5 Par rapport au schéma ci-dessous, complète le texte en dessous avec les bons termes.
-
-schéma du chiffrement de message à clé publique-clé privé avec bob et alice
+### 6.5 Par rapport au schéma ci-dessous, complète le texte en dessous avec les bons termes.
 
 Pour envoyer un message privé à Bob, Alice utilise - expression 1 -de Bob pour rendre « illisible » le « texte en clair » et Bob utilise- expression 2 -pour transformer le texte « illisible » en « texte en clair ». Ce processus représente un chiffrement- expression 3 -.
 
-6.6 Tu as ci-dessous un extrait d’un guide de configuration d’un tunnel VPN site à site en IPSec/ISAKMP. Traduit ce passage en Français.
+### 6.6 Tu as ci-dessous un extrait d’un guide de configuration d’un tunnel VPN site à site en IPSec/ISAKMP. Traduit ce passage en Français.
 
 When ISAKMP negotiations begin, the peer that initiates the negotiation sends all of its policies to the remote peer, and the remote peer tries to find a match. The remote peer checks all of the peer's policies against each of its configured policies in priority order (highest priority first) until it discovers a match.
 
-6.7 En matière de sécurité informatique, indique 3 types de menaces (risques et attaques) auxquelles peut être confronté un SI (ne rentre pas dans les détails).
-7. Mettre en place, assurer et tester les sauvegardes et les restaurations des éléments de l'infrastructure
+### 6.7 En matière de sécurité informatique, indique 3 types de menaces (risques et attaques) auxquelles peut être confronté un SI (ne rentre pas dans les détails).
+  
+## 7. Mettre en place, assurer et tester les sauvegardes et les restaurations des éléments de l'infrastructure
 
-7.1 Qu'est-ce que la règle 3-2-1 ?
+### 7.1 Qu'est-ce que la règle 3-2-1 ?
 
-7.2 Quelles sont les différents types de sauvegardes à mettre en place en entreprise ?
+### 7.2 Quelles sont les différents types de sauvegardes à mettre en place en entreprise ?
 
-7.3 Indiquer les différences entre une sauvegarde, de l'archivage, et un clonage.
-8. Exploiter et maintenir les services de déploiement des postes de travail
+### 7.3 Indiquer les différences entre une sauvegarde, de l'archivage, et un clonage.
+  
+## 8. Exploiter et maintenir les services de déploiement des postes de travail
 
-8.1 Quels avantages apporte la mise en place d'un service centralisé de mises à jour logicielles au sein d'une entreprise ? Indique une solution que tu connais et explique son fonctionnement.
+### 8.1 Quels avantages apporte la mise en place d'un service centralisé de mises à jour logicielles au sein d'une entreprise ? Indique une solution que tu connais et explique son fonctionnement.
 
-8.2 Quels sont les inconvénients liés à la mise en place d'une solution de terminaux clients légers par rapport à des postes fixes ?
+### 8.2 Quels sont les inconvénients liés à la mise en place d'une solution de terminaux clients légers par rapport à des postes fixes ?
 
-8.3 Que fait l’exécution de la ligne de commande suivante ? Dans quel contexte est-elle utilisée ?
+### 8.3 Que fait l’exécution de la ligne de commande suivante ? Dans quel contexte est-elle utilisée ?
 
 ``C:\Windows\System32\sysprep\sysprep.exe /oobe /generalize /shutdown``
 
-8.4 Dans le cadre d'un déploiement de postes clients Linux, quelle est l'utilité d'un dépôt local de paquet ?
+### 8.4 Dans le cadre d'un déploiement de postes clients Linux, quelle est l'utilité d'un dépôt local de paquet ?
