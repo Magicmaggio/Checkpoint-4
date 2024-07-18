@@ -63,12 +63,14 @@ Pour les 2 premiers sous-réseaux, donne l’adresse de réseaux, le masque (en 
 
 Sans changer l'adresse IP des 2 PC, donne une solution matérielle et une modification du paramétrage à effectuer pour que les 2 PC puissent communiquer entre-eux.
 
-### 4.5 Des ordinateurs sont connectés sur un switch qui n'a qu'un seul vlan, avec les configurations IP suivantes :
-PC	Adresse IP	Masque de sous-réseau
-PC1	192.168.10.8	255.255.255.0
-PC2	192.168.10.12	255.255.255.0
-PC3	192.168.10.10	255.255.0.0
-PC4	192.168.11.9	255.255.255.0
+### 4.5 Des ordinateurs sont connectés sur un switch qui n'a qu'un seul vlan, avec les configurations IP suivantes :  
+
+| PC |	Adresse IP |	Masque de sous-réseau |  
+|:-:|:-:|:-:|
+| PC1 |	192.168.10.8 |	255.255.255.0 |  
+| PC2 |	192.168.10.12 |	255.255.255.0 |  
+| PC3 |	192.168.10.10 |	255.255.0.0 |  
+| PC4 |	192.168.11.9 |	255.255.255.0 |  
 
 Pour chaque ordinateur, indique en expliquant les communications ICMP réussies.
 
