@@ -48,28 +48,28 @@ Fais 2 copies de ce script (nommées GetIpConfiguration_1.ps1 et GetIpConfigurat
 En complément, tu dois exporter les informations trouvées dans un fichier de sortie. Ce fichier se nomme export1.csv pour le premier script, et export2.csv pour le second. Ils sont placés au même endroit que les scripts, et les informations sont séparées par des ";" (point-virgule).
 
 L'affichage de sortie du script GetIpConfiguration_1.ps1 doit être exactement comme ci-dessous (avec les attributs dans l'ordre) :
-
+```
 InterfaceAlias      IPAddress       PrefixLength      Dhcp
 
 --------------      ---------       ------------      ----
 
 Ethernet            172.16.10.60    24                Enabled
-
+```
 L'affichage de sortie du script GetIpConfiguration_2.ps1 doit être exactement comme ci-dessous (avec le contenu de chaque ligne dans l'ordre) :
-
+```
 Type d'interface : Ethernet
 
 Adresse IP :	      172.16.10.60/24
 
 Statut du DHCP :   Enabled
-
+```
 Voilà ce que peut être le contenu du fichier export1.csv :
 
-Ethernet;172.16.10.60;24;Enabled
+``Ethernet;172.16.10.60;24;Enabled``
 
 De même, voilà ce que peut être le contenu du fichier export2.csv :
 
-Ethernet;172.16.10.60/24;Enabled
+``Ethernet;172.16.10.60/24;Enabled``
 
 ### Question 2 :
 Insérer les copies d'écran du script GetIpConfiguration_1.ps1, de l'affichage de sortie, et du contenu du fichier export1.csv .
