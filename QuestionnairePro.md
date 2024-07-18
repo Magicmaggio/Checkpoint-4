@@ -164,12 +164,6 @@ wilder@Ubuntu:~$ echo -n "ce message n'a aucun rapport avec le précedent !" | s
 
 ### 6.4 Quels types de VPN sont représentés dans les illustrations suivantes ?
 
-VPN A :
-schéma d'un VPN nomade
-
-VPN B :
-schéma d'un VPN site-à-site
-
 ### 6.5 Par rapport au schéma ci-dessous, complète le texte en dessous avec les bons termes.
 
 Pour envoyer un message privé à Bob, Alice utilise - expression 1 -de Bob pour rendre « illisible » le « texte en clair » et Bob utilise- expression 2 -pour transformer le texte « illisible » en « texte en clair ». Ce processus représente un chiffrement- expression 3 -.
