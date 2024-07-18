@@ -2,45 +2,44 @@
 
 ## 1. Assurer le support utilisateur en centre de service
 
-1.1 Du point de vue d'ITIL, quelle est la différence entre un incident et un problème ?
+### 1.1 Du point de vue d'ITIL, quelle est la différence entre un incident et un problème ?
 
-1.2 Quels sont les différents moyens de prendre le contrôle à distance d'une machine ?
+### 1.2 Quels sont les différents moyens de prendre le contrôle à distance d'une machine ?
 
-1.3 Donne les différentes étapes à respecter dans une résolution d'incident par téléphone.  
+### 1.3 Donne les différentes étapes à respecter dans une résolution d'incident par téléphone.  
 
   
 ## 2. Exploiter des serveurs Windows et un domaine Active Directory
 
-2.1 Qu'est-ce qu'un rôle FSMO ?
+### 2.1 Qu'est-ce qu'un rôle FSMO ?
 
-2.2 En quoi la réplication entre contrôleurs de domaine est primordiale sur un domaine ?  
+### 2.2 En quoi la réplication entre contrôleurs de domaine est primordiale sur un domaine ?  
 
   
 ## 3. Exploiter des serveurs Linux
 
-3.1 Quel est le résultat de la commande suivante : chmod u+x /home/tssr/factures/export.sh ?
+### 3.1 Quel est le résultat de la commande suivante : chmod u+x /home/tssr/factures/export.sh ?
 
-3.2 Quelle commande dois-tu écrire dans un terminal sur un OS Debian pour ajouter l'adresse IP 172.16.8.16/24 à l'interface enp0s8 ?
+### 3.2 Quelle commande dois-tu écrire dans un terminal sur un OS Debian pour ajouter l'adresse IP 172.16.8.16/24 à l'interface enp0s8 ?
 
-3.3 L'utilisateur Wilder ne parvient plus à accéder au dossier travaux. Explique la cause probable et donne les outils (commandes) pour diagnostiquer et résoudre le problème.
+### 3.3 L'utilisateur Wilder ne parvient plus à accéder au dossier travaux. Explique la cause probable et donne les outils (commandes) pour diagnostiquer et résoudre le problème.
 ```
 wilder@SRV08:~$ ls /home/wilder/travaux/
 ls: impossible d'ouvrir le répertoire /home/wilder/travaux/: Permission non accordée
 wilder@SRV08:~$
 ```
-3.4 D’après les éléments de la capture ci-dessous, si on ajoute un disque dur supplémentaire qui n'a qu'une seule partition, comment se nommera t'elle ?
+### 3.4 D’après les éléments de la capture ci-dessous, si on ajoute un disque dur supplémentaire qui n'a qu'une seule partition, comment se nommera t'elle ?
 
-fenêtre des partitions d'un disque sous linux
 
-3.5 Donne 2 commandes qui te permettent de visualiser les disques et les partitions d'un serveur Linux.  
+### 3.5 Donne 2 commandes qui te permettent de visualiser les disques et les partitions d'un serveur Linux.  
 
   
 ## 4. Exploiter un réseau IP
 
-4.1 Une entreprise a un réseau 192.160.16.0/25. Elle souhaite le découper en 4 sous-réseaux de taille identiques.
+### 4.1 Une entreprise a un réseau 192.160.16.0/25. Elle souhaite le découper en 4 sous-réseaux de taille identiques.
 Pour les 2 premiers sous-réseaux, donne l’adresse de réseaux, le masque (en notation CIDR), la première adresse disponible, la dernière adresse disponible, ainsi que l'adresse de broadcast.
 
-4.2 Complète le tableau de conversion suivant :  
+### 4.2 Complète le tableau de conversion suivant :  
 
   
 | Décimal |	Binaire |	Hexadécimal |  
@@ -51,21 +50,20 @@ Pour les 2 premiers sous-réseaux, donne l’adresse de réseaux, le masque (en 
 | 16 |	00010000 | |  
 
 
-4.3 Pour le schéma ci-dessous :
+### 4.3 Pour le schéma ci-dessous :
 
     Quels sont les liens trunk ?
     Quelle méthode de routage intervlan est utilisée ?
 
-schéma d'un réseau avec des liens trunk
 
-4.4 Sur un réseau IP, 2 PC ont la configuration IP suivante :
+### 4.4 Sur un réseau IP, 2 PC ont la configuration IP suivante :
 
     PC1 : 192.168.1.54/24
     PC2 : 192.168.2.74/24
 
 Sans changer l'adresse IP des 2 PC, donne une solution matérielle et une modification du paramétrage à effectuer pour que les 2 PC puissent communiquer entre-eux.
 
-4.5 Des ordinateurs sont connectés sur un switch qui n'a qu'un seul vlan, avec les configurations IP suivantes :
+### 4.5 Des ordinateurs sont connectés sur un switch qui n'a qu'un seul vlan, avec les configurations IP suivantes :
 PC	Adresse IP	Masque de sous-réseau
 PC1	192.168.10.8	255.255.255.0
 PC2	192.168.10.12	255.255.255.0
@@ -74,13 +72,11 @@ PC4	192.168.11.9	255.255.255.0
 
 Pour chaque ordinateur, indique en expliquant les communications ICMP réussies.
 
-4.6 Quelles sont les actions possibles à mettre en œuvre pour sécuriser un réseau sans fil ?
+### 4.6 Quelles sont les actions possibles à mettre en œuvre pour sécuriser un réseau sans fil ?
 
-4.7 Quelles sont les routes statiques à ajouter sur le routeur Routeur1 pour permettre la communication entre PC0 et PC3 ?
+### 4.7 Quelles sont les routes statiques à ajouter sur le routeur Routeur1 pour permettre la communication entre PC0 et PC3 ?
 
-schéma réseau
-
-4.8 Complète le tableau suivant avec les informations sur les différents services/protocoles :  
+### 4.8 Complète le tableau suivant avec les informations sur les différents services/protocoles :  
 
 | Acronyme |	Nom complet |	Port(s) par défaut TCP |	Port(s) par défaut UDP |  
 |:-:|:-:|:-:|:-:|
@@ -96,11 +92,9 @@ schéma réseau
 | NTP | | | |  			
 | |	| 995 | |  	
 
-4.9 Sur quels ports du switch peut-on brancher ce téléphone IP ?
+### 4.9 Sur quels ports du switch peut-on brancher ce téléphone IP ?
 
-image d'un switch et d'un téléphone IP
-
-4.10 Indique sur quelle couche du modèle TCP/IP les protocoles suivant se trouve (mets une croix "x" dans la bonne colonne) :  
+### 4.10 Indique sur quelle couche du modèle TCP/IP les protocoles suivant se trouve (mets une croix "x" dans la bonne colonne) :  
 
 | Protocole |	Accès réseau |	Internet |	Transport |	Application |  
 |:-:|:-:|:-:|:-:|:-:|
@@ -115,19 +109,17 @@ image d'un switch et d'un téléphone IP
 | Telnet | | | | |				  
 | SNMP | | | | |    
 
-5. Maintenir des serveurs dans une infrastructure virtualisée
+## 5. Maintenir des serveurs dans une infrastructure virtualisée
 
-5.1 Explique ce qu'est un cluster d'hyperviseur. Quel est l’intérêt d'une telle structure ?
+### 5.1 Explique ce qu'est un cluster d'hyperviseur. Quel est l’intérêt d'une telle structure ?
 
-5.2 Qu'est-ce qu'un container ? Donne différentes solutions de conteneurisation.
+### 5.2 Qu'est-ce qu'un container ? Donne différentes solutions de conteneurisation.
 
-5.3 Que représente les lignes de code ci-dessous ? Comment les utiliser ?
+### 5.3 Que représente les lignes de code ci-dessous ? Comment les utiliser ?
 
-FROM ubuntu:latest
-
-
-# Installation de packages
 ```
+FROM ubuntu:latest
+# Installation de packages
 RUN apt-get update && apt-get install -y \
     bash \
     nano \
