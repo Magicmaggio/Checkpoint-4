@@ -100,18 +100,21 @@ schéma réseau
 
 image d'un switch et d'un téléphone IP
 
-4.10 Indique sur quelle couche du modèle TCP/IP les protocoles suivant se trouve (mets une croix "x" dans la bonne colonne) :
-Protocole	Accès réseau	Internet	Transport	Application
-ARP				
-Ethernet				
-ICMP				
-IPv6				
-DHCP				
-FTP				
-TLS/SSL				
-POP3				
-Telnet				
-SNMP				
+4.10 Indique sur quelle couche du modèle TCP/IP les protocoles suivant se trouve (mets une croix "x" dans la bonne colonne) :  
+
+| Protocole |	Accès réseau |	Internet |	Transport |	Application |  
+|:-:|:-:|:-:|:-:|:-:|
+| ARP |	| | | |			  
+| Ethernet | | | | |	  			
+| ICMP | | | | |				  
+| IPv6 | | | | |				  
+| DHCP | | | | |				  
+| FTP | | | | |				  
+| TLS/SSL | | | | |			  	
+| POP3 | | | | |				  
+| Telnet | | | | |				  
+| SNMP | | | | |    
+
 5. Maintenir des serveurs dans une infrastructure virtualisée
 
 5.1 Explique ce qu'est un cluster d'hyperviseur. Quel est l’intérêt d'une telle structure ?
@@ -124,30 +127,21 @@ FROM ubuntu:latest
 
 
 # Installation de packages
-
+```
 RUN apt-get update && apt-get install -y \
-
     bash \
-
     nano \
-
     && rm -rf /var/lib/apt/lists/*
 
-
 # Répertoire local
-
 RUN mkdir /data
 
-
 # Dossier de travail
-
 WORKDIR /data
 
-
 # Image en mode interactif
-
 CMD ["bash", "-i"]
-
+```
 5.4 Pour la copie d'écran ci-dessous, quelle devrait être ta démarche dans une telle situation ?
 
 image de nagios avec une alerte critique sur un swap à 0%
@@ -157,17 +151,15 @@ image de nagios avec une alerte critique sur un swap à 0%
 5.6 Dans la mise en oeuvre d'une solution HA (High Availability), quels sont les élements indispensable ?
 6. Maintenir et sécuriser les accès à Internet et les interconnexions des réseaux
 
-6.1 Quel est l'impact des ACL ci-dessous sur la machine 172.16.0.10 ? Peut-on fusionner ces ACL pour n'en former qu'une seule ? Si oui fais-le.
+6.1 Quel est l'impact des ACL ci-dessous sur la machine 172.16.0.10 ? Peut-on fusionner ces ACL pour n'en former qu'une seule ? Si oui fais-le.  
 
+```
 access-list 100 deny icmp host 172.16.0.10 172.17.0.0 0.255.255.255
-
 access-list 100 permit ip any any
-
 access-list 101 deny tcp host 172.16.0.10 host 220.0.0.60 eq www
-
 access-list 101 deny tcp host 172.16.0.10 host 220.0.0.60 eq 443
-
 access-list 101 permit ip any any
+```
 
 6.2 Pour les commandes ci-dessous les 2 chaînes de caractères en entrée sont de tailles différentes et pourtant la longueur du résultat des commandes est identique. Pourquoi ?
 
